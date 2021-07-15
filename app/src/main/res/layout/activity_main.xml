@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentations.views.activities.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/upper_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_itemName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/simulation"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="-50dp"
+            android:background="@drawable/ic_category" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@id/upper_bar">
+
+        <com.simulation.simulationecatalog.data.components.CustomEditText
+            android:id="@+id/et_searchCatalog"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:background="@drawable/search_background"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:hint="@string/search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHighlight="#a0a0a0"
+            android:textColorHint="@color/grey"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_catalog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar"
+        tools:listitem="@layout/list_main_catalog" />
+
+    <LinearLayout
+        android:id="@+id/option_list"
+        android:layout_width="@dimen/dimen_150_dp"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/upper_bar">
+
+        <TextView
+            android:id="@+id/tv_option"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_background"
+            android:padding="@dimen/dimen_5_dp"
+            android:text="@string/txt_all_category"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_20_dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_office"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_background"
+            android:padding="@dimen/dimen_5_dp"
+            android:text="@string/txt_office"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_20_dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_public"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_background"
+            android:padding="@dimen/dimen_5_dp"
+            android:text="@string/txt_public"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_20_dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_residential"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_background"
+            android:padding="@dimen/dimen_5_dp"
+            android:text="@string/txt_residential"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_20_dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_furniture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_background"
+            android:padding="@dimen/dimen_5_dp"
+            android:text="@string/txt_furniture"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_20_dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_hotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_background"
+            android:padding="@dimen/dimen_5_dp"
+            android:text="@string/txt_hotel"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_20_dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_chainStore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_background"
+            android:padding="@dimen/dimen_5_dp"
+            android:text="@string/txt_chain_store"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_20_dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_education"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_background"
+            android:padding="@dimen/dimen_5_dp"
+            android:text="@string/txt_education"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_20_dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_hospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_background"
+            android:padding="@dimen/dimen_5_dp"
+            android:text="@string/txt_hospital"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dimen_20_dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

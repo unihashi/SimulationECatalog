@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "923538932734",
+    "project_id": "simulation-ecatalog",
+    "storage_bucket": "simulation-ecatalog.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923538932734:android:a7fe3232899a29c471b6af",
+        "android_client_info": {
+          "package_name": "com.simulation.simulationecatalog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923538932734-8l79pm42q33gkk5amj021htbk2euv4rp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuUjWZfawmA-xhZQLb0FDEkp2H9VPh-Yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923538932734-8l79pm42q33gkk5amj021htbk2euv4rp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

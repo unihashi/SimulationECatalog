@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomButton">
+        <attr name="bl_showborder" format="boolean"/>
+        <attr name="bl_bordersize" format="dimension"/>
+        <attr name="bl_bordercolor" format="color"/>
+        <attr name="bl_redius" format="dimension"/>
+        <attr name="bl_bgcolor" format="color"/>
+        <attr name="bl_ripleColor" format="color" />
+        <attr name="bl_enable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomEditText">
+        <attr name="cedt_showborder" format="boolean"/>
+        <attr name="cedt_bordersize" format="dimension"/>
+        <attr name="cedt_bordercolor" format="color"/>
+        <attr name="cedt_redius" format="dimension"/>
+        <attr name="cedt_bgcolor" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomTextView">
+        <attr name="ctv_showborder" format="boolean" />
+        <attr name="ctv_bordersize" format="dimension" />
+        <attr name="ctv_bordercolor" format="color" />
+        <attr name="ctv_redius" format="dimension" />
+        <attr name="ctv_bgcolor" format="color" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_button_size">45dp</dimen>
+    <dimen name="width_find_course">230dp</dimen>
+    <dimen name="width_img_course_lesson">200dp</dimen>
+    <dimen name="height_img_course_lesson">100dp</dimen>
+    <dimen name="max_with_of_chat">90dp</dimen>
+    <dimen name="imgSizeCoachCourse">55dp</dimen>
+    <dimen name="sizeImgProfileCoachdee">50dp</dimen>
+    <dimen name="sizeTitleDialog">16sp</dimen>
+    <dimen name="sizeLogoEnconceptLinkAccount">28dp</dimen>
+    <dimen name="heightButtonLinkLogin">45dp</dimen>
+    <dimen name="titleSizeQuestionList">18sp</dimen>
+    <dimen name="heightControllerLiveStream">45dp</dimen>
+    <dimen name="textSizeWatermark">13sp</dimen>
+    <item name="percentGuideLine" type="dimen" format="float">0.25</item>
+    <dimen name="button_size">40dp</dimen>
+    <dimen name="widthPositionAndDurationVideoCoachDee">50dp</dimen>
+    <dimen name="heightControllerVideo">40dp</dimen>
+    <dimen name="sizeButtonPlayVideoCoachDee">40dp</dimen>
+</resources>
